@@ -1,0 +1,23 @@
+{
+  "name": "minor-project",
+  "version": "1.0.0",
+  "description": "Video Chatting Application with Language Learning Features",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend",
+    "dev": "npm run dev --prefix backend & npm run dev --prefix frontend",
+    "install-all": "npm install --prefix backend && npm install --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GBU-2026-Project/MINOR_PROJECT_.git"
+  },
+  "keywords": ["video-chat", "language-learning", "react", "nodejs", "stream"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GBU-2026-Project/MINOR_PROJECT_/issues"
+  },
+  "homepage": "https://github.com/GBU-2026-Project/MINOR_PROJECT_#readme"
+}
