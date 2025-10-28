@@ -9,7 +9,12 @@
     "start": "node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["api", "backend", "express", "stream"],
+  "keywords": [
+    "api",
+    "backend",
+    "express",
+    "stream"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -20,6 +25,7 @@
     "dotenv": "^16.5.0",
     "express": "^4.21.0",
     "jsonwebtoken": "^9.0.2",
+    "minor-project": "file:..",
     "mongoose": "^8.13.2",
     "stream-chat": "^8.60.0"
   },

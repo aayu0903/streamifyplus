@@ -7,17 +7,20 @@
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "npm run start --prefix backend",
     "dev": "npm run dev --prefix backend & npm run dev --prefix frontend",
-    "install-all": "npm install --prefix backend && npm install --prefix frontend"
+    "install-all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:frontend": "cd frontend && npm install",
+    "preview": "cd frontend && npm run preview"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GBU-2026-Project/MINOR_PROJECT_.git"
+    "url": "git+https://github.com/aayu0903/streamify-.git"
   },
   "keywords": ["video-chat", "language-learning", "react", "nodejs", "stream"],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GBU-2026-Project/MINOR_PROJECT_/issues"
+    "url": "https://github.com/aayu0903/streamify-/issues"
   },
-  "homepage": "https://github.com/GBU-2026-Project/MINOR_PROJECT_#readme"
+  "homepage": "https://github.com/aayu0903/streamify-#readme"
 }

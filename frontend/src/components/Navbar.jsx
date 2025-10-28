@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router";
 import useAuthUser from "../hooks/useAuthUser";
-import { BellIcon, LogOutIcon, ShipWheelIcon } from "lucide-react";
+import { BellIcon, LogOutIcon, ShipWheelIcon, MessageCircleIcon } from "lucide-react";
 import ThemeSelector from "./ThemeSelector";
 import useLogout from "../hooks/useLogout";
 
@@ -16,6 +16,10 @@ const Navbar = () => {
   // });
 
   const { logoutMutation } = useLogout();
+
+  const handlePrivateChat = () => {
+    window.open('https://chatledger.vercel.app', '_blank');
+  };
 
   return (
     <nav className="bg-base-200 border-b border-base-300 sticky top-0 z-30 h-16 flex items-center">
@@ -34,6 +38,15 @@ const Navbar = () => {
           )}
 
           <div className="flex items-center gap-3 sm:gap-4 ml-auto">
+            {/* Private Chat Button */}
+            <button 
+              onClick={handlePrivateChat}
+              className="btn btn-primary btn-sm gap-2 hover:btn-secondary transition-all duration-200 bg-gradient-to-r from-blue-500 to-purple-600 border-none text-white font-medium"
+            >
+              <MessageCircleIcon className="h-4 w-4" />
+              <span className="hidden sm:inline">Private Chat</span>
+            </button>
+            
             <Link to={"/notifications"}>
               <button className="btn btn-ghost btn-circle">
                 <BellIcon className="h-6 w-6 text-base-content opacity-70" />
